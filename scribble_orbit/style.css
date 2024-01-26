@@ -1,3 +1,7 @@
+:root {
+--primaryColor: #000000;
+}
+
 .scribCon {
 display: flex;
 justify-content: center;
@@ -9,7 +13,7 @@ height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
-border-color: black;
+border-color: var(--primaryColor);
 border-style: double;
 padding: 5rem;
 animation: wobble 4s linear 0s infinite, rotate 4s linear 0s infinite;
@@ -20,7 +24,7 @@ position: absolute;
 display: flex;
 justify-content: center;
 align-items: center;
-border-color: black;
+border-color: var(--primaryColor);
 border-style:double;
 padding: 5rem;
 animation: wobble2 4s linear 0s infinite, rotate 4s linear 0s infinite;
@@ -31,7 +35,7 @@ position: absolute;
 display: flex;
 justify-content: center;
 align-items: center;
-border-color: black;
+border-color: var(--primaryColor);
 border-style:double;
 padding: 5rem;
 animation: wobble3 4s linear 0s infinite, rotate 4s linear 0s infinite;
