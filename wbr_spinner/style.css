@@ -1,0 +1,72 @@
+:root {
+--primaryColor: #FFFFFF;
+--secondaryColor: #000000;
+--tertiaryColor: #ff0000;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.square {
+padding: 5rem;
+border-radius: 10%;
+background-color: var(--primaryColor);
+animation: color 3s linear 0s infinite, rotate2 3s linear 0s infinite;;
+}
+
+.circle {
+border-radius: 50%;
+padding: 5rem;
+position: absolute;
+background-color: var(--secondaryColor);
+animation: color2 2s linear 0s infinite;
+}
+
+.square2 {
+padding: 3.5rem;
+position: absolute;
+background-color: var(--primaryColor);
+animation: color 3s linear 0s infinite, rotate 3s linear 0s infinite;
+}
+
+.circle2 {
+display: flex;
+justify-content: space-between;
+border-radius: 50%;
+padding: 3.25rem;
+position: absolute;
+background-color: var(--secondaryColor);
+animation: color2 3s linear 0s infinite;
+}
+
+.litteSquare {
+position: absolute;
+padding: 25px;
+background-color: var(--tertiaryColor);
+}
+
+@keyframes color {
+    0% {background-color: var(--primaryColor)}
+    50% {background-color: var(--secondaryColor)}
+    100% {background-color: var(--primaryColor)}
+}
+
+@keyframes color2 {
+    0% {background-color: var(--secondaryColor)}
+    50% {background-color: var(--primaryColor)}
+    100% {background-color: var(--secondaryColor)}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0)}
+    100% {transform: rotate(360deg)}
+}
+
+@keyframes rotate2 {
+0% {transform: rotate(0)}
+100% {transform: rotate(-360deg)}
+}
